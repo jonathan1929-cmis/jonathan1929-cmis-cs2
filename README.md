@@ -1,2 +1,3 @@
 # jonathan1929-cmis-cs2
-Repository for Computer Science 2
+A repository for storing assignements in Computer Science 2
+
