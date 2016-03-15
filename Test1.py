@@ -55,23 +55,24 @@ def circle_diameter(r):
 	return math.sqrt(r/pi)*2
 
 def output(Area1,Area2,Area3,Total):
- out = """ Circle        Diameter             
- c1            {}
- c2            {}
- c3            {}
- total         {}""".format(Area1, Area2, Area3, Total)
-return out
+	out = """Circle        Diameter             
+c1            {}
+c2            {}
+c3            {}
+total         {}""".format(Area1, Area2, Area3, Total)
+	return out
 
 def addvalues(D1,D2,D3):
-value = D1 + D2 + D3
-return value
+	value = D1 + D2 + D3
+	return value
 
 def main():
-Area1=int(raw_input("c1:"))
-Area2=int(raw_input("c2:"))
-Area3=int(raw_input("c3:"))
-D1 = circle_diameter(Area1)
-D2 = circle_diameter(Area2)
-D3 = circle_diameter(Area3)
-Total = addvalues(D1,D2,D3)
-return output(Area1,Area2,Area3,Total)
+	Area1=int(raw_input("c1:"))
+	Area2=int(raw_input("c2:"))
+	Area3=int(raw_input("c3:"))
+	D1 = circle_diameter(Area1)
+	D2 = circle_diameter(Area2)
+	D3 = circle_diameter(Area3)
+	Total = addvalues(D1,D2,D3)
+	print output(Area1,Area2,Area3,Total)
+main()
