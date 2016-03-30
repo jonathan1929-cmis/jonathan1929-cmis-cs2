@@ -1,5 +1,5 @@
-def storytelling(name,crush,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle):
-	print """On a bright sunny day you, {}, was walking down the street. You were thinking about {} and felt {}. You were back from a day of {} at work. For a long time you wanted to become {}, but rethought his chocie and decided to be {}. Considers you've only got {} numbers of years left to live, you don't really have a lot. While walking, you see {} across the street, and {} pulling over next to her in a {}.""".format(name,crush,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
+def storytelling(name,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle):
+	print """On a bright sunny day you, """ + str(name) +""", was walking down the street. You were thinking about """ + str(crush) + """ and felt {}. You were back from a day of {} at work. For a long time you wanted to become {}, but rethought your chocie and decided to be {}. Considering you've only got {} numbers of years left to live, you don't really have a lot of time. While walking, you see {} across the street, and {} pulling over next to her in a {}.""".format(favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
 
 def main():
 	name=raw_input("What is your name?:")
@@ -19,7 +19,8 @@ def main():
 	favmov=raw_input("What was your reaction to your favorite movie?:")
 	kill=raw_input("If you were confronted by a serial killer, how would you act?:")
 	yearsleft=75-int(age)
-	storytelling(name,crush,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
+	story=storytelling(name,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
+	print story
 
 main()
 
