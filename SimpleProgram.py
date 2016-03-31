@@ -1,5 +1,12 @@
+def calculation(age):
+	yearsleft=75-int(age)
+	return yearsleft
+
+
 def storytelling(name,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle):
-	print """On a bright sunny day you, """ + str(name) +""", was walking down the street. You were thinking about """ + str(crush) + """ and felt {}. You were back from a day of {} at work. For a long time you wanted to become {}, but rethought your chocie and decided to be {}. Considering you've only got {} numbers of years left to live, you don't really have a lot of time. While walking, you see {} across the street, and {} pulling over next to her in a {}.""".format(favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
+	print """------------------------------------------------------------
+On a bright sunny day you, """ + str(name) +""", was walking down the street. You were thinking about """ + str(crush) + """ and felt {}. You were back from a day of {} at work. For a long time you wanted to become {}, but rethought your choice and decided to be {}. Considering you've only got {} numbers of years left to live, you don't really have a lot of time. While walking, you see {} across the street, and {} pulling over next to her in a {}. Only problem is, """.format(favmov,hobby,father,mother,yearsleft,crush,friend,vehicle) + str(friend) +""" has been dead for 5 years..."""
+
 
 def main():
 	name=raw_input("What is your name?:")
@@ -18,7 +25,7 @@ def main():
 	oneself=raw_input("Desribe yourself in one word:")
 	favmov=raw_input("What was your reaction to your favorite movie?:")
 	kill=raw_input("If you were confronted by a serial killer, how would you act?:")
-	yearsleft=75-int(age)
+	yearsleft=calculation(age)
 	story=storytelling(name,favmov,hobby,father,mother,yearsleft,crush,friend,vehicle)
 	print story
 
