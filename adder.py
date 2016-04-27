@@ -1,14 +1,18 @@
 import math
-def adder():
-	total = 0
-	added = float(raw_input("Next Number: "))
+
+def main():
+	adder(0)
+
+
+def adder(total):
+	added = raw_input("Next Number: ")
 	if float(added) > 0:
-		total = total + added
+		total += float(added)
 		print "Running Total: {}".format(float(total))
-		adder()
+		adder(total)
 	else:
 		print "Your total run score is: {}".format(float(total))
 
-def track()
 
-adder()
+
+main()
