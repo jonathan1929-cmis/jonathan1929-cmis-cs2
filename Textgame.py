@@ -23,6 +23,8 @@ The only tool you are given for the game is a codex of some kind with informatio
 The introduction ends and you're left with the other members.
 What do you do first?"""
 
+def codex(x):
+	if choice1 = 
 
 def first():
 	print """Type "codex" to view codex
