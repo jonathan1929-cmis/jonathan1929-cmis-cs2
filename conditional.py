@@ -1,9 +1,6 @@
-#Rock paper scissors, 3 rounds
+#Rock paper scissors game
 import math
 import random
-
-
-
 
 def game():
 	opp = random.randint(1, 3)
@@ -26,20 +23,15 @@ def initiate():
 		choice = 3
 	return choice
 
-
-def gametime(yourhand, opponenthand):
-	if yourhand == 1 and opponenthand not == 1 or 2:
-		yourhand = 4
-	elif opponenthand == 1 and yourhand not == 1 or 2:
-		opponenthand = 4
-	
-
-
 def calc(yourhand, opponenthand):
-	if yourhand > opponenthand:
-		print "You Win!"
-	elif yourhand < opponenthand
+	if yourhand == 3 and opponenthand == 1 or yourhand == 1 and opponenthand == 2:
 		print "Opponent Wins!"
+	elif yourhand == 2 and not opponenthand != 3:
+		print "Opponent Wins!"
+	elif yourhand == opponenthand:
+		print "It's a tie!"
+	else:
+		print "You Win!"
 
 def printopp(opponenthand):
 	if opponenthand == 1:
@@ -49,15 +41,15 @@ def printopp(opponenthand):
 	elif opponenthand == 3:
 		return "scissors"
 
+
 def main():
 	print """A challenger has appeared!
 You participate in a rock paper scissors duel! Choose your hand!"""
 	yourhand = initiate()
 	opponenthand = game()
-	gametime(yourhand, opponenthand)
 	print "Opponent chose {}!".format(printopp(opponenthand))
 	calc(yourhand, opponenthand)
-	
+	print "You earned {} points!".format(round(random.random()*80))
 
 
 main()
