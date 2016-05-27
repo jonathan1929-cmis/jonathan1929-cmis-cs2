@@ -38,8 +38,18 @@ def oddodds(x, stack):
 			x -= 1
 	print stack
 
-oddodds(10, 0)
-oddodds(20, 0)
+#oddodds(10, 0)
+#oddodds(20, 0)
 
 
+def grid(w, h):
+	out = " "
+	out += "."*w
+	h -= 1
+	while h>0:
+		print out
+		h-=1
+	return out
+
+print grid(20,5)
 
